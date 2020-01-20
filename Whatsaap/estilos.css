@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+}
+main {
+    display: block;
+} 
+.base-principal {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.contenido-lateral {
+    border: 1px solid #8C8C8C;
+}
+
+header {
+    background: #DBDBDB;
+    height: 100px;
+    font-size: 36px;
+    line-height: 3;
+    text-align: center;
+}
+.lista-contactos {
+    cursor: pointer;
+    background: #F2F2F2;    
+}
+.lista-contactos article {
+    border: 1px solid #DBDBDB;
+    height: 100px;
+    text-align: center;
+    line-height: 6;
+}
+.mensajes {
+    height: 530px;
+    background: #F2F2F2;
+}
+
+.mensajes section {
+    margin: 0;
+    height: 125px;
+    width: 95px;
+    position: relative;
+    top: 402px;
+    text-align: center;
+}
+input {
+    border: 1px solid #DBDBDB;
+    height: 62px;
+    width: 557px;
+    position: relative;
+    top: 284px;
+    cursor: pointer;
+    border-radius: 100px;
+    margin: 21px;
+
+}
+article img {
+    float: left;
+    border-radius: 50px;
+    height: 79px;
+    width: 77px;
+    margin: 9px;
+    text-align: justify;
+}
+p {
+    margin: auto;
+    text-align-last: center;
+    
+}
+.lista-contactos article:hover {
+    cursor: pointer;
+    background: #DBDBDB;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+pixeles: px
+%: %
+
+viewport-height: vh
+viewport-width: vw
+
+em: em
+rem: rem
+*/

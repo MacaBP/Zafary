@@ -1,26 +1,31 @@
-const boton = window.document.querySelector('#boton');
-boton.addEventListener('click', mostrarDatos); 
+const btnLogin = window.document.querySelector('#btn-login');
+const msgError = document.querySelector('.error')
+btnLogin.addEventListener('click', mostrarDatos); 
 
 function mostrarDatos(){
-    const input1= window.document.querySelector('#email');
-    const input2 = window.document.querySelector('#contraseña');
-    const textoInput = input1.value;
-    const textoInput2 = input2.value; 
+    const inpUsarname = window.document.querySelector('#inp-usarname');
+    const inpPassword = window.document.querySelector('#inp-password');
+    const textoInput = inpUsarname.value;
+    const textoInput2 = inpPassword.value; 
+    
 
-    input1.value = '';
-    input1.focus(); 
+    if (!inpUsarname.value || !inpPassword.value)  return;
 
-    input2.value = '';
-    input2.focus(); 
+    inpUsarname.value = '';
+    inpUsarname.focus(); 
 
-   
+    inpPassword.value = '';
+    inpPassword.focus();
+
     if (textoInput === 'ejemplo@gmail.com' && textoInput2 === '123456'){
         console.log('Iniciando sesión...')    
+        
+        document.location.assign('../Layout/index.html');
     } 
     else {
-        console.log('Email y/o contraseña incorrectos')
+        msgError.classList.remove('hide');
+        msgError.classList.add('visible');
     }
 
-   
 
 }
